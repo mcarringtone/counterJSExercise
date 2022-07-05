@@ -3,6 +3,8 @@ let btnEl = document.querySelector(".button");
 let count = 0;
 
 function clicked() {
-  alert("clicked");
+  count++;
+  numEl.textContent = count;
 }
-btnEl.addEventListener("click", clicked());
+
+btnEl.addEventListener("click", clicked);
